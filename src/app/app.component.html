@@ -1,0 +1,72 @@
+<form (ngSubmit) = 'save2(form)' #form = 'ngForm'>
+  <div class="col-md-4">
+    <br>
+    <label for="email">Enter the email address:</label>
+    <input class="form-control"
+           ngModel
+           type="email"
+           id="email"
+           pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}.{1}[a-zA-Z]{2,}"
+           required
+           name="email"
+           #name2 = "ngModel"
+           >
+
+    <span *ngIf="!name2.valid && name2.touched">Please enter a valid value</span>
+
+    <br><label for="phoneNumber">Enter the phone number:</label>
+    <input class="form-control"
+           ngModel
+           type="text"
+           id="phoneNumber"
+           pattern="[0-9]*"
+           required
+           name="phoneNumber"
+           #phone = "ngModel">
+
+    <span *ngIf="!phone.valid && phone.touched">Please enter a valid value</span>
+
+    <br><label for="subs">Select a subscription</label>
+    <select
+      name="subscription"
+      id="subs"
+      ngModel
+      class="form-control">
+      <option value="Advanced" selected>Advanced</option>
+      <option value="Basic">Basic</option>
+      <option value="pro">Pro</option>
+    </select>
+
+    <br>
+    <label for="password">Enter Your Password:</label>
+    <div class="row pass">
+      <input class="form-control col-md-9"
+             ngModel
+             [type]="showPassword"
+             id="password"
+             required
+             name="password"
+             #name3 = "ngModel"
+      >
+      <i class="fa col-md-2"
+         [ngClass]="{'fa-eye': showPassword === 'password', 'fa-eye-slash': showPassword === 'text'}"
+         (click)="showPass()" aria-hidden="true"></i>
+    </div>
+
+
+    <span *ngIf="!name3.valid && name3.touched">Please enter a valid value</span>
+
+    <br><button [disabled]="!form.valid" type='button' type='submit' class="btn btn-primary">Save</button>
+  </div>
+
+</form>
+
+
+
+
+************************************Reactive Form**************************************************************
+<hr><br><br>
+
+
+
+<app-reactiv></app-reactiv>

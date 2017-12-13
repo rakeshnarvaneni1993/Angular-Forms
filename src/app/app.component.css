@@ -1,0 +1,13 @@
+form{
+  margin: 0 auto;
+}
+
+span{
+  color: red;
+}
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+.pass{
+  padding-left: 5%
+}
