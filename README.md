@@ -1,27 +1,29 @@
-# Forms
+This repo gives you a boiler plate start for using Angular forms, both Template driven and Reactive forms.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
+Directions to use:
 
-## Development server
+1. Clone or download this repo.
+2. If you downloaded the repo, extract the files and save it to your prefferd location.
+3. Navigate to the project location using your command line.
+4. Run "npm install". This installs all the dependencies listed on package.json file.
+5. Once the dependencies are installed, run "ng serve". This command starts a local server on port 4200.
+6. Open your browser and got to "localhost:4200". You can see two forms, one on top is the teplate driven approach and one at the bottom is the Reactive approach.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Template driven:
+1. This approach is close to the earlier version of angular.
+2. This approach uses two-way databinding using ngModel.
+3. Less flexibility on adding new fields to the form.
+4. Cannot customize validations.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Reactive approach:
 
-## Build
+1. This approach is new in Angular 2 and further versions.
+2. It gives flexibility of adding custom validations.
+3. Less lines of HTML content compoared to template driven.
+4. Form is built in typescript file and then synced with HTML.
+5. Easy for grouping of form elements.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Please email me at narvaneni.rakesh2012@gmail.com for furhter questions.
